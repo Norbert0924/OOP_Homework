@@ -6,7 +6,7 @@ public class Author {
     private String country;
     private int birthYear;
 
-    //public Author(String ){}
+    public Author(){} // default constructor
 
     public Author(String name, String country, int birthYear) {
         this.name = name;
@@ -29,9 +29,9 @@ public class Author {
         System.out.println("\n\t");
         System.out.println("Information:");
 
-        System.out.println("\n\t" + "author : " + author.name + "\n\t" +
-                "country :" + author.country + "\n\t" +
-                "birthYear :" + author.birthYear);
+        System.out.println("\n\t" + "author: " + author.name + "\n\t" +
+                "country: " + author.country + "\n\t" +
+                "birthYear: " + author.birthYear);
     }
 
     public void setName(String name) {

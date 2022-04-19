@@ -54,10 +54,10 @@ public class Book {
     public static void printInfo(Book book) {
         System.out.println("\n\t");
         System.out.println("Information:");
-        System.out.println("\n\t" + "author : " + book.author + "\n\t" +
-                "title : " + book.title + "\n\t" +
-                "published : " + book.published + "\n\t" +
-                "genre : " + book.genre);
+        System.out.println("\n\t" + "author: " + book.author + "\n\t" +
+                "title: " + book.title + "\n\t" +
+                "published: " + book.published + "\n\t" +
+                "genre: " + book.genre);
     }
     public String getAuthor() {
         return author;
