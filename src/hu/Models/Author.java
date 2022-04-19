@@ -33,4 +33,23 @@ public class Author {
                 "country :" + author.country + "\n\t" +
                 "birthYear :" + author.birthYear);
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setCountry(String county){
+        this.country = country;
+    }
+    public String getCountry(){
+        return  country;
+    }
+    public void setBirthYear(int birthYear){
+        this.birthYear = birthYear;
+    }
+    public int getBirthYear(){
+        return birthYear;
+    }
 }
