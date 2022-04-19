@@ -30,34 +30,25 @@ public class Book {
         printInfo(book3);
 
         System.out.println("------------");
-        System.out.println("book1");
-        System.out.println(book1);
+        System.out.println("book1: "+book1);
         System.out.println("------------");
-        System.out.println("toString");
-        System.out.println(book1.toString());
+        System.out.println("toString: "+book1.toString());
         System.out.println("------------");
 
-        System.out.println("Only author: ");
-        System.out.println(book1.getAuthor());
+        System.out.println("Only author: "+book1.getAuthor());
         System.out.println("------------");
-        System.out.println("Only title: ");
-        System.out.println(book1.getTitle());
+        System.out.println("Only title: "+book1.getTitle());
         System.out.println("------------");
-        System.out.println("Only published: ");
-        System.out.println(book1.getPublished());
+        System.out.println("Only published: "+book1.getPublished());
         System.out.println("------------");
-        System.out.println("Only genre: ");
-        System.out.println(book1.getGenre());
+        System.out.println("Only genre: "+book1.getGenre());
         System.out.println("\n\t");
 
-        System.out.println("New author");
-        book1.setAuthor("Karl Popper:");
-        System.out.println(book1.getAuthor());
+        book1.setAuthor("Karl Popper");
+        System.out.println("New author :"+book1.getAuthor());
 
-        System.out.println("New genre: ");
         book1.setGenre("horror");
-        System.out.println(book1.getGenre());
-
+        System.out.println("New genre :"+book1.getGenre());
     }
 
     public static void printInfo(Book book) {
@@ -68,35 +59,27 @@ public class Book {
                 "published : " + book.published + "\n\t" +
                 "genre : " + book.genre);
     }
-
     public String getAuthor() {
         return author;
     }
-
     public String getTitle() {
         return title;
     }
-
     public int getPublished() {
         return published;
     }
-
     public String getGenre() {
         return genre;
     }
-
     public void setAuthor(String author) {
         this.author = author;
     }
-
     public void setTitle(String title) {
         this.title = title;
     }
-
     public void setPublished(int published) {
         this.published = published;
     }
-
     public void setGenre(String genre) {
         this.genre = genre;
     }
